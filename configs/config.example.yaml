@@ -1,0 +1,19 @@
+general:
+  threads: 20
+  timeout: 10s
+  rate_limit: 50
+  user_agent: "Zrecon/1.0.0"
+
+ports:
+  default_top_ports: 100
+
+output:
+  directory: "./results"
+  formats:
+    - txt
+    - json
+    - html
+
+security:
+  require_authorization: true
+  allow_private_targets: false
